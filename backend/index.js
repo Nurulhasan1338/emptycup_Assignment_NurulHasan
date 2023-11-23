@@ -16,7 +16,7 @@ app.use(cors(
 app.use(express.json());
 
 
-app.get('/api/getrecords',async(req,res,)=>{
+app.get('/api/getrecords',async(req,res)=>{
     try {
   
         // const data = await records.find();
@@ -26,7 +26,7 @@ app.get('/api/getrecords',async(req,res,)=>{
         // else{
         //  res.json({"success":false,"msg":"no problem"});
         // }
-        return res.json({"success":true,"data":"aa gya kya"});
+        return res.status(200).json({"success":true,"data":"aa gya kya"});
        }  catch (error) {
            console.error(error);
            res.status(500).send("some internal error");
@@ -61,13 +61,13 @@ app.get('/api/getrecords',async(req,res,)=>{
 // })
 
 
-app.get('*',(req,res,next)=>{
-  res.status(200).json({
-    message:'connected successfully'
-  })
+// app.get('*',(req,res)=>{
+//   res.status(200).json({
+//     message:'connected successfully'
+//   })
 
   
-})
+// })
 
 app.listen(PORT,()=>{
   console.log(`sever is listening at :https://localhost:${PORT}`);
