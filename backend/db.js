@@ -4,7 +4,7 @@ require('dotenv').config();
 
 const connectToMongo = async() => {
     
-  mongose.connect(process.env.MONGO_URI);
+  mongose.connect(process.env.MONGODB_URI);
   console.log("connect to mongo successfully!!");
 }
 
