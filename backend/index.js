@@ -8,7 +8,7 @@ connectToMongo();
 
 app.use(cors(
   {
-    origin:["https://emptycup-assignment-nurul-hasan.vercel.app/"],
+    origin:[""],
     methods:["Post","GET"],
     credentials:true
   }
