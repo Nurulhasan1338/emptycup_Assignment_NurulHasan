@@ -4,7 +4,7 @@ const cors = require('cors')
 const express = require('express')
 // const records = require("./module/recorde.js");
 const app = express()
-// connectToMongo();  
+connectToMongo();  
 
 app.use(cors(
   {
@@ -61,7 +61,7 @@ app.get('/api/getrecords',async(req,res,)=>{
 // })
 
 
-app.get('/api',(req,res,next)=>{
+app.get('*',(req,res,next)=>{
   res.status(200).json({
     message:'connected successfully'
   })
