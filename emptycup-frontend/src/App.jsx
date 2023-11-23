@@ -20,7 +20,7 @@ function App() {
   
 
   const fetchdata=async()=>{
-    const response = await fetch("http://localhost:7000/api/getrecords/",{
+    const response = await fetch("https://emptycup-backend-nurul.vercel.app/api/getrecords",{
       method:'GET',
       headers:{
         "Content-type": "application/json"
