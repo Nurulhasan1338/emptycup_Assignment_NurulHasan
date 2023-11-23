@@ -4,7 +4,7 @@ const cors = require('cors')
 const express = require('express')
 // const records = require("./module/recorde.js");
 const app = express()
-connectToMongo();  
+// connectToMongo();  
 
 app.use(cors(
   {
