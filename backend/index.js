@@ -16,7 +16,7 @@ app.use(cors(
 app.use(express.json());
 
 
-app.get('/api/getrecords',async(req,res)=>{
+app.get('*',async(req,res)=>{
     try {
   
         // const data = await records.find();
