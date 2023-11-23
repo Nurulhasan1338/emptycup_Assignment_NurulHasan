@@ -9,7 +9,7 @@ connectToMongo();
 app.use(cors(
   {
     origin:[""],
-    methods:["Post","GET"],
+    methods:["GET"],
     credentials:true
   }
 ));
