@@ -1,21 +1,55 @@
-# emptycup_Assignment
-A dashboard with list of designer with there details like price, past projects, rantings etc.
+# EmptyCup Assignment
 
-# How to start in local environment
-here backend and frontend are in one folder but run them saparatly. 
-- For Frontend :
-    1. npm install
-    2. npm run dev
-- Backend :
-    1. npm intall
-    2. node index.js
+## Overview
 
- # Tech useed : 
-   - Frontend :
-       - React.js
-       - bootstrap
-       - Material UI
-    - Backend :
-       - NodeJs
-       - MongoDB
-       - ExpressJs 
+This project is a dashboard displaying a list of designers along with their details such as pricing, past projects, ratings, etc.
+
+## Local Environment Setup
+
+### Frontend
+
+1. Navigate to the `frontend` directory.
+   ```bash
+   cd frontend
+   ```
+
+2. Install dependencies.
+   ```bash
+   npm install
+   ```
+
+3. Run the development server.
+   ```bash
+   npm run dev
+   ```
+
+### Backend
+
+1. Navigate to the `backend` directory.
+   ```bash
+   cd backend
+   ```
+
+2. Install dependencies.
+   ```bash
+   npm install
+   ```
+
+3. Start the backend server.
+   ```bash
+   node index.js
+   ```
+
+## Technologies Used
+
+### Frontend
+
+- **React.js:** A JavaScript library for building user interfaces.
+- **Bootstrap:** A front-end framework for designing responsive and sleek interfaces.
+- **Material UI:** A React UI framework that implements Google's Material Design.
+
+### Backend
+
+- **Node.js:** A JavaScript runtime for server-side development.
+- **MongoDB:** A NoSQL database for storing and retrieving data efficiently.
+- **Express.js:** A web application framework for Node.js that simplifies the creation of robust APIs.
