@@ -6,7 +6,13 @@ const records = require("./module/recorde.js");
 const app = express()
 connectToMongo();  
 
-app.use(cors());
+app.use(cors(
+  {
+    origin:["https://emptycup-assignment-nurul-hasan.vercel.app/"],
+    methods:["Post","GET"],
+    credentials:True
+  }
+));
 app.use(express.json());
 
 
