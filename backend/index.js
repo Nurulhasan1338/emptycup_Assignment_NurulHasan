@@ -10,7 +10,7 @@ app.use(cors(
   {
     origin:["https://emptycup-assignment-nurul-hasan.vercel.app/"],
     methods:["Post","GET"],
-    credentials:True
+    credentials:true
   }
 ));
 app.use(express.json());
