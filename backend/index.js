@@ -26,7 +26,7 @@ app.get('/api/getrecords',async(req,res,)=>{
         // else{
         //  res.json({"success":false,"msg":"no problem"});
         // }
-        res.json({"success":true,"data":"aa gya kya"});
+        return res.json({"success":true,"data":"aa gya kya"});
        }  catch (error) {
            console.error(error);
            res.status(500).send("some internal error");
