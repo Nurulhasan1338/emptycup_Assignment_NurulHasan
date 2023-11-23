@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;300;400;500&display=swap');
+
+#root {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'Chivo', sans-serif;
+ 
+}
+.row{
+  --bs-gutter-x: 0rem;
+}
+
+.Card{
+  padding: 22px 0px;
+}
+.inner{
+  padding-left: 30px;
+}
+
+.collection1{
+  background-color:#FFFCF2;
+}
+
+.numbers h2{
+font-family: Chivo;
+font-size: 24px;
+font-weight: 700;
+line-height: 29px;
+letter-spacing: 0em;
+text-align: center;
+margin-bottom: -3px;
+}
+
+.numbers p{
+font-family: Chivo;
+font-size: 10px;
+font-weight: 400;
+line-height: 12px;
+letter-spacing: 0em;
+text-align: center;
+}
+
+
+.logoname h1{
+font-family: Chivo;
+color: #716966;
+font-weight: 600;
+
+}
+
+.logo img{
+  width: 35px;
+  height: 35px;
+}
+
+.descriptoion p{
+  font-weight: 500;
+  font-size: 10px;
+  margin-bottom: 28px;
+}
+
+.star{
+  font-size: 1.5rem!important;
+  color: #2c2820!important;
+  margin-bottom: 1rem;
+}
+
+
+#contact p{
+  font-family: Chivo;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 6px;
+}
+
+.option button{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  font-size: 9px;
+  color: #8D4337;
+}
+
+button{
+  background: transparent;
+  border: none;
+}
+
