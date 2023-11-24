@@ -54,33 +54,34 @@ This project is a dashboard displaying a list of designers along with their deta
 - **MongoDB:** A NoSQL database for storing and retrieving data efficiently.
 - **Express.js:** A web application framework for Node.js that simplifies the creation of robust APIs.
 
-<<<<<<< HEAD
+## Setup by Dockerhub
 
-### Setup by Dockerhub 
-- goto dockerhub 
-- link : https://hub.docker.com/repository/docker/nurahasan/emptycup_assignment
-- above link is of docker reposirtory name 'nurahasan/emptycup_assignment' where both frontend and backend images given
-- pull both images as 
-- for backend image
-```bash
+- Go to Dockerhub: [nurahasan/emptycup_assignment](https://hub.docker.com/repository/docker/nurahasan/emptycup_assignment)
+- Pull both images using the following commands:
+
+   - For backend image
+   ```bash
    docker pull nurahasan/emptycup_assignment:backend-image
-```
+   ```
 
-- for frontend image
-```bash
+   - For frontend image
+   ```bash
    docker pull nurahasan/emptycup_assignment:firstimages
-```
-- then simply make & run the containers with the help of images
-- use images with there tag name while running as ```nurahasan/emptycup_assignment:backend-image ```
+   ```
 
-- command for running container 
-```bash
-docker run -d --rm -p PORT:PORT --name CONTAINER_NAME IMAGE_NAME 
-```
+- Then, create and run the containers using the pulled images. Use the images with their tag names while running:
+
+   - For backend image
+   ```bash
+   docker run -d --rm -p 7000:7000 --name backend-container nurahasan/emptycup_assignment:backend-image
+   ```
+
+   - For frontend image
+   ```bash
+   docker run -d --rm -p 3000:3000 --name frontend-container nurahasan/emptycup_assignment:firstimages
+   ```
 - PORT : 3000 (for frontend)
 - PORT : 7000 (for backend)
-=======
+
 ### ScreenShot
 <img width="157" alt="image" src="https://github.com/Nurulhasan1338/emptycup_Assignment_NurulHasan/assets/75856743/f21efe7e-a6b5-43d9-a349-c152bf88a339">
-
->>>>>>> 921a39d868dc172ef9e38192d9725ea4d90c4785
