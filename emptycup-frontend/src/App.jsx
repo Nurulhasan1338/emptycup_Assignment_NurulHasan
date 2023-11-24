@@ -8,7 +8,7 @@ import {
 } from "react-router-dom";
 import Cards from "./components/customCard" 
 import Header from "./components/header"
-import Favlist from './components/favlist';
+
 
 
 function App() {
@@ -17,10 +17,8 @@ function App() {
   const [display,saveDisplay] = useState([]);
   const [list,setList] = useState([]);
 
-  
-
   const fetchdata=async()=>{
-    const response = await fetch("https://emptycup-backend-nurul.vercel.app/api/getrecords",{
+    try{const response = await fetch("http://localhost:7000/api/get",{
       method:'GET',
       headers:{
         "Content-type": "application/json"
@@ -30,12 +28,14 @@ function App() {
     setList(res.data);
     saveDisplay(res.data);
     console.log(res.data)
+  }catch(err){
+    console.log(err);
+  }
 
   }
 
   const favlist=()=>{
     const tempData = list.filter(item=>item.shortlisted==true);
-    console.log(tempData)
     saveDisplay(tempData);
   }
 
@@ -51,7 +51,7 @@ function App() {
   return (
     <>
 
-      <Header favList = {favlist} get = {getList}></Header>
+    <Header favList = {favlist} get = {getList}></Header>
   
     <div className="items">
     {

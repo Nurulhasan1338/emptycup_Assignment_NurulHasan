@@ -48,10 +48,11 @@ const CustomCard = (props) => {
                     <p>year</p>
                 </div>
                 <div className='text-center mx-3'>
-                    <h2>{data.price}</h2>
+                    <h2>$$</h2>
                     <p>Price</p>
                 </div>
 
+                
             </div>
             <div id='contact'>
                 <p>{data.contacts[0]}</p>

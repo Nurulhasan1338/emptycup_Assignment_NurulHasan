@@ -6,17 +6,11 @@ const records = require("./module/recorde.js");
 const app = express()
 connectToMongo();  
 
-app.use(cors(
-  {
-    origin:["https://emptycup-backend-nurul.vercel.app/"],
-    methods:["GET"],
-    credentials:true
-  }
-));
+app.use(cors());
 app.use(express.json());
 
 
-app.get('/api',async(req,res)=>{
+app.get('/api/get',async(req,res)=>{
     try {
   
         const data = await records.find();
