@@ -54,6 +54,7 @@ This project is a dashboard displaying a list of designers along with their deta
 - **MongoDB:** A NoSQL database for storing and retrieving data efficiently.
 - **Express.js:** A web application framework for Node.js that simplifies the creation of robust APIs.
 
+<<<<<<< HEAD
 
 ### Setup by Dockerhub 
 - goto dockerhub 
@@ -78,3 +79,8 @@ docker run -d --rm -p PORT:PORT --name CONTAINER_NAME IMAGE_NAME
 ```
 - PORT : 3000 (for frontend)
 - PORT : 7000 (for backend)
+=======
+### ScreenShot
+<img width="157" alt="image" src="https://github.com/Nurulhasan1338/emptycup_Assignment_NurulHasan/assets/75856743/f21efe7e-a6b5-43d9-a349-c152bf88a339">
+
+>>>>>>> 921a39d868dc172ef9e38192d9725ea4d90c4785
