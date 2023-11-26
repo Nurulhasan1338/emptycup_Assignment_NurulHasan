@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import Cards from "./components/customCard" 
 import Header from "./components/header"
+import Spinner from './components/spinner';
 
 
 
@@ -16,6 +17,7 @@ function App() {
   
   const [display,saveDisplay] = useState([]);
   const [list,setList] = useState([]);
+  const [loading,setLoading] = useState(true);
 
   const fetchdata=async()=>{
     try{const response = await fetch("https://enmptycup-backend-nurulhasan.onrender.com/api/get",{
@@ -27,6 +29,7 @@ function App() {
     const res = await response.json();
     setList(res.data);
     saveDisplay(res.data);
+    setLoading(false);
     console.log(res.data)
   }catch(err){
     console.log(err);
@@ -52,6 +55,8 @@ function App() {
     <>
 
     <Header favList = {favlist} get = {getList}></Header>
+
+    {loading?<Spinner></Spinner>:""}
   
     <div className="items">
     {
