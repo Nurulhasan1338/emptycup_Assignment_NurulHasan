@@ -18,7 +18,7 @@ function App() {
   const [list,setList] = useState([]);
 
   const fetchdata=async()=>{
-    try{const response = await fetch("http://localhost:7000/api/get",{
+    try{const response = await fetch("https://enmptycup-backend-nurulhasan.onrender.com/api/get",{
       method:'GET',
       headers:{
         "Content-type": "application/json"
