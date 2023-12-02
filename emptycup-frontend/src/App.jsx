@@ -1,14 +1,10 @@
 
-import './App.css'
+import './App.css';
 import React,{useEffect,useState} from 'react';
-import {
-  HashRouter as Router,
-  Route,
-  Routes,
-} from "react-router-dom";
-import Cards from "./components/customCard" 
-import Header from "./components/header"
+import Cards from "./components/customCard"; 
+import Header from "./components/header";
 import Spinner from './components/spinner';
+import List from "./components/list"
 
 
 
@@ -37,15 +33,20 @@ function App() {
 
   }
 
+  // for setting display favlist or saved ones
   const favlist=()=>{
     const tempData = list.filter(item=>item.shortlisted==true);
     saveDisplay(tempData);
   }
 
+
+  // for setting display list to original or full list
   const getList = ()=>{
     saveDisplay(list);
   }
 
+
+  // for loading list from sever
   useEffect(()=>{
     fetchdata();
   },[])
@@ -56,19 +57,8 @@ function App() {
 
     <Header favList = {favlist} get = {getList}></Header>
 
-    {loading?<Spinner></Spinner>:""}
-  
-    <div className="items">
-    {
-      display.map((ele,key)=>{
-      return(
-      <div key = {ele._id} className={`collection${key%2==0?1:0}`}>
-      <Cards data = {ele}></Cards>
-      </div>
-      )
-      })
-    }
-    </div>
+    {loading && <Spinner></Spinner>}
+    <List display={display}></List>
      
     </>
   )
