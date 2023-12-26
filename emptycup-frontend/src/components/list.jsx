@@ -1,5 +1,5 @@
 import React from 'react'
-import Cards from "./customCard"
+import Cards from "./Card"
 
 const List = (props) => {
 

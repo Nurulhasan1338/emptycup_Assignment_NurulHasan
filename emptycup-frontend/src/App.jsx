@@ -1,7 +1,7 @@
 
 import './App.css';
 import React,{useEffect,useState} from 'react';
-import Cards from "./components/customCard"; 
+import Cards from "./components/Card"; 
 import Header from "./components/header";
 import Spinner from './components/spinner';
 import List from "./components/list"
@@ -20,7 +20,8 @@ function App() {
       method:'GET',
       headers:{
         "Content-type": "application/json"
-      }
+      },
+      
     });
     const res = await response.json();
     setList(res.data);
